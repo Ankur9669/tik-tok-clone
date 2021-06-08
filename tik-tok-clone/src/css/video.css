@@ -1,5 +1,42 @@
+
+.video-container{
+    height: 100%;
+    width: 100%;
+    scroll-snap-type: y mandatory;
+}
 .video{
     height: 100%;
     width: 100%;
     scroll-snap-align: start;
+}
+.video-footer{
+    height: fit-content;
+    width: 300px;
+    position: relative;
+    bottom: 180px;
+    margin-left: 20px;
+    color: white;
+}
+.video-footer-user-name{
+    padding: 5px;
+}
+.video-footer-description{
+    padding: 5px;
+}
+.video-sidebar{
+    display: flex;
+    height: 270px;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    bottom: 440px;
+    margin-left: 85%;
+    color: white;
+}
+.video-ticker-container .ticker{
+    margin-left: 30px;
+    white-space: nowrap; 
+}
+.video-music-icon{
+    position: absolute;
 }

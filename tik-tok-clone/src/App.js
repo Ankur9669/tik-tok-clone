@@ -9,8 +9,6 @@ function App() {
         <Video/>
         <Video/>
       </div>
-      {/* Video footer */}
-      {/* Video Sidebar */}
     </div>
   );
 }
