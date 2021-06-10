@@ -1,15 +1,16 @@
 import mongoose from "mongoose";
 import express from "express";
 import videoDb from "./modals/videoDB.js";
+import Cors from "cors";
 
 //App config
 const app = express(); 
-const PORT = process.env.PORT || 9000;
+const PORT = process.env.PORT || 9001;
 
 
 //Middlewares
 app.use(express.json());
-
+app.use(Cors());
 
 //DB config
 const connectionUrl = "mongodb+srv://admin:lWFLVsnx11fCNqiT@cluster0.hpozv.mongodb.net/tik-tok?retryWrites=true&w=majority";
@@ -50,7 +51,7 @@ app.get("/v1/get", (req, res) => {
             res.status(501).send(err);
         }
         else{
-            res.status(201).send(data);
+            res.status(200).send(data);
         }
     });
 });
